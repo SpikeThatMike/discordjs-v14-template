@@ -1,8 +1,8 @@
 const CustomClient = require("../base/util/client");
-const eventInterface = require("../base/templates/event");
+const EventInterface = require("../base/templates/event");
 const { CommandInteraction, InteractionType, Collection, EmbedBuilder } = require("discord.js");
 
-module.exports = class ready extends eventInterface {
+module.exports = class InteractionCreate extends EventInterface {
     /**
      * @param {CustomClient} client 
      * @param {CommandInteraction} interaction

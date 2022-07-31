@@ -1,4 +1,4 @@
-module.exports = class eventInterface {
+module.exports = class EventInterface {
     name;
     description;
     once;

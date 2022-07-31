@@ -1,4 +1,4 @@
-module.exports = class commandInterface {
+module.exports = class CommandInterface {
     name;
     defaultMemberPermissions;
     options;

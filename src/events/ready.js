@@ -1,7 +1,7 @@
 const CustomClient = require("../base/util/client");
-const eventInterface = require("../base/templates/event");
+const EventInterface = require("../base/templates/event");
 
-module.exports = class ready extends eventInterface {
+module.exports = class Ready extends EventInterface {
     /**
      * @param {CustomClient} client 
      */

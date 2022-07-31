@@ -1,7 +1,7 @@
 const CustomClient = require("./client");
 const glob = require("glob");
 
-module.exports = class handlers {
+module.exports = class Handlers {
     /**
      * @param {CustomClient} client 
      */

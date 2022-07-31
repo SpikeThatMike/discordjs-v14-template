@@ -1,8 +1,8 @@
 const CustomClient = require("../base/util/client");
-const commandInterface = require("../base/templates/command");
+const CommandInterface = require("../base/templates/command");
 const { PermissionFlagsBits, CommandInteraction } = require("discord.js");
 
-module.exports = class test extends commandInterface {
+module.exports = class Reload extends CommandInterface {
     /**
      * @param {CustomClient} client 
      * @param {CommandInteraction} interaction 
