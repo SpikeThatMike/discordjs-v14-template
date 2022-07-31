@@ -17,7 +17,7 @@ module.exports = class InteractionCreate extends EventInterface {
      * @param {CommandInteraction} interaction
      */
     execute(interaction) {
-        if(!interaction.type === InteractionType.ApplicationCommand) return;
+        if(interaction.type != InteractionType.ApplicationCommand) return;
 
         const command = this.client.commands.get(interaction.commandName);
         if(!command) return interaction.reply({context: "This command no longer exists", ephemeral: true}) && this.client.commands.delete(interaction.commandName);
