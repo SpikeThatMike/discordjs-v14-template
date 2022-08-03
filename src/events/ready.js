@@ -17,6 +17,6 @@ module.exports = class Ready extends EventInterface {
         this.client.guilds.cache.get(this.client.config.devGuild)?.commands.set(this.client.devCommands);
         this.client.application.commands.set(this.client.publicCommands);
         console.log(`Loaded ${this.client.publicCommands.length || 0} commands & ${this.client.devCommands.length || 0} developer commands`)
-        return console.log(`${this.client.user.tag} is now online`);
+        console.log(`${this.client.user.tag} is now online`);
     }
 }
